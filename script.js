@@ -14,8 +14,8 @@
 }
 
 		function showPosition(position) {
-				  		x.innerHTML = "Lat: " + position.coords.latitude +
-				  		"   Lon: " + position.coords.longitude;
+				  		x.innerHTML = "Lat: " + position.coords.latitude.toFixed(5) +
+				  		"   Lon: " + position.coords.longitude.toFixed(5);
 		}
 
 
