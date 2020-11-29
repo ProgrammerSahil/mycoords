@@ -4,13 +4,18 @@
 	<title>Your Coordinates</title>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div id="main">
-<textarea id="demo" ></textarea>
-<button id="copy" onclick="copyCoords()"><i class="fa fa-clipboard" aria-hidden="true"></i></button>
+<div id="text">
+<textarea id="demo" data-role="none">Allow Location Access</textarea>
+</div>
+<button id="copy" onclick="copyCoords()"><i class="far fa-clipboard" aria-hidden="true"></i></button>
+
 </div>
 <script
   src="https://code.jquery.com/jquery-3.5.1.js"
