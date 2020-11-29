@@ -15,7 +15,7 @@
 
 		function showPosition(position) {
 				  		x.innerHTML = "Lat: " + position.coords.latitude.toFixed(5) +
-				  		"   Lon: " + position.coords.longitude.toFixed(5);
+				  		"  Lon: " + position.coords.longitude.toFixed(5);
 		}
 
 
@@ -24,6 +24,9 @@
 			copyText.select();
 			copyText.setSelectionRange(0, 99999);
 			document.execCommand("copy");
+		}
+		function refresh(){
+			getTargetWeather("demo");
 		}
 
 
